@@ -1,0 +1,54 @@
+\documentclass[8pt]{each-usp}
+\usepackage{tabularx}
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage{setspace}
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+%
+% Definições do trabalho
+%
+
+\curso{Sistemas de Informação}
+\disciplina{SIN5010 - Gestão de Projetos em Computação2}
+\unidade{Escola de Artes, Ciências e Humanidades - EACH2}
+\alunos{Aluno}
+\numeroUSP{00000}
+\datadeentrega{16/04/2018}
+\professores{Nome do docente}
+\titulodotrabalho{Resenha 04}
+
+\begin{document}
+
+%% IMPRESSÃO DOS DADOS - NAO ALTERAR
+\begin{table}[]
+\begin{tabularx}{\linewidth}{|>{\hsize=0.2\hsize}X|
+                              >{\hsize=0.4\hsize}X|
+                              >{\hsize=0.6\hsize}X|
+                              >{\hsize=0.1\hsize}X|
+                              >{\hsize=0.1\hsize}X|}                
+\specialrule{1.5pt}{2pt}{0pt}
+\multicolumn{2}{|l|}{\textbf{Unidade Acadêmica da Disciplina}}        & \multicolumn{3}{l|}{\textbf{Programa de pós-graduação}} \\ 
+\multicolumn{2}{|l|}{\imprimirunidade} & \multicolumn{3}{l|}{\imprimircurso}       \\ \specialrule{1.5pt}{0pt}{0pt}
+\multicolumn{5}{|l|}{\textbf{Disciplina}}                                                                \\ 
+\multicolumn{5}{|l|}{\imprimirdisciplina}                                                                   \\ \specialrule{1.5pt}{0pt}{0pt}
+\multicolumn{2}{|l|}{\textbf{Acadêmico(s)}}                    & \multicolumn{3}{l|}{\textbf{Assinatura(s)}}                \\ 
+\multicolumn{2}{|l|}{ \imprimiralunos  }                      & \multicolumn{3}{l|}{}                          \\ \specialrule{1.5pt}{0pt}{0pt}
+\textbf{Nº USP}              & \textbf{Data de entrega}            & \multicolumn{3}{l|}{\textbf{Professor(es)}}               \\ 
+\imprimirnumeroUSP                 &     \imprimirdatadeentrega                       & \multicolumn{3}{l|}{\imprimirprofessores}                          \\ \hline
+\specialrule{13pt}{0pt}{0pt}
+\end{tabularx}
+\end{table}
+
+
+\onehalfspace
+
+\input{conteudo/texto}
+
+
+% Bibiliografia
+\bibliography{referencias}
+
+\end{document} 
